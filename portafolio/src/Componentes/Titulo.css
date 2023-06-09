@@ -1,0 +1,108 @@
+.titulo_box {
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "nombre nombre nombre"
+    "nombre nombre nombre"
+    ". . ."
+    ". full full"
+    ". dev dev"
+    ". . ."; */
+
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.152);
+  font-size: 2rem;
+}
+
+/* .nico {
+  grid-area: nico;
+  justify-self: center;
+  height: 200px;
+  width: 200px;
+} */
+
+.titulo {
+  font-family: letrabold;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.titulo1 {
+  position: relative;
+  padding: 0 5px;
+  margin-bottom: 20vh;
+}
+
+.titulo1::before {
+  background: linear-gradient(90deg, #7928ca, #ff0080);
+  content: "NICOLAS CARAMES GARCIA";
+  position: absolute;
+  inset: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: titulo 9s infinite;
+  animation-delay: 0s;
+}
+
+.titulo2 {
+  position: relative;
+  padding: 0 5px;
+  font-size: 2.5rem;
+  justify-self: end;
+}
+
+.titulo2::before {
+  background: linear-gradient(90deg, #ff4d4d, #f9cb28);
+  content: "FULL STACK";
+  position: absolute;
+  inset: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: titulo 9s infinite;
+  animation-delay: 3s;
+}
+
+.titulo3 {
+  position: relative;
+  padding: 0 5px;
+  font-size: 2.5rem;
+  justify-self: end;
+}
+
+.titulo3::before {
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  content: "DEVELOPER";
+  position: absolute;
+  inset: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: titulo 9s infinite;
+  animation-delay: 6s;
+}
+
+@keyframes titulo {
+  0%,
+  16.667%,
+  100% {
+    opacity: 1;
+  }
+
+  33.333%,
+  83.333% {
+    opacity: 0;
+  }
+}

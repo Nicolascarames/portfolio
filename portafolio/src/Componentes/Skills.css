@@ -1,0 +1,33 @@
+.skills {
+  height: 300px;
+  width: 350px;
+  background-color: var(--background-color-black);
+
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.skills_header {
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+
+.skills_header h3 {
+  color: var(--background-color-azul);
+}
+
+.skills_article {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.main_skills img {
+  height: 40px;
+  width: 40px;
+}

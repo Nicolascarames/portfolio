@@ -1,0 +1,29 @@
+@font-face {
+  font-family: letra1;
+  src: url(letra2.ttf);
+}
+@font-face {
+  font-family: letrabold;
+  src: url(fat.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: letra1;
+}
+:root {
+  --background-color-black: #262626;
+  --background-color-azul: #677db7;
+  --background-color-morado: #947eb0;
+  --background-color-beige: #fff8f0;
+  --background-color-azulon: #9dd9d2;
+  /* colores vivos */
+  --background-color-lila: #7928ca;
+  --background-color-rojo: #ff0080;
+  --background-color-naranja: #ff4d4d;
+  --background-color-amarillo: #f9cb28;
+  --background-color-azul: #007cf0;
+  --background-color-azulito: #00dfd8;
+}
