@@ -1,20 +1,5 @@
-@font-face {
-  font-family: letra1;
-  src: url(letra2.ttf);
-}
-@font-face {
-  font-family: letrabold;
-  src: url(fat.otf);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: letra1;
-}
-:root {
-  --background-color-black: #262626;
+#root {
+  --background-color-black: #010101;
   --background-color-azul: #677db7;
   --background-color-morado: #947eb0;
   --background-color-beige: #fff8f0;

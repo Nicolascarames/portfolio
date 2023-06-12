@@ -1,60 +1,72 @@
-.body {
-  background-color: var(--background-color-black);
+.home {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  background: url("../img/pared.png");
 }
 
 .main_home {
+  transform-style: preserve-3d;
+  position: relative;
   height: 100vh;
-  width: 100vw;
-  background-color: var(--background-color-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rebeccapurple;
+}
+.main_segundo {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rebeccapurple;
+}
+.main_tercero {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rebeccapurple;
 }
 
-.header {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-
-  height: 10%;
+.no_parallax {
+  z-index: 999;
 }
 
-.header_menu {
-  z-index: 20;
-  align-self: center;
-  justify-self: end;
-  margin-right: 5%;
-}
-
-.header_nav {
-  z-index: 10;
+.parallax::after {
+  content: "";
   position: absolute;
-  background-color: var(--background-color-black);
+  top: 0;
+  bottom: 0;
   right: 0;
   left: 0;
-  bottom: 0;
-  top: 0;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
+  transform: translateZ(-10px) scale(8);
+  background-size: 100%;
+  z-index: -1;
 }
 
-.header_nav a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: var(--background-color-lila);
-}
-.header_nav img:first-child {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 3rem;
-  color: black;
+.bg1::after {
+  background: url("../icons/enterneon.png");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: 84% 15%;
 }
 
-.main_skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+.bg2::after {
+  background: url("../img/arribaverde.png");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: 80% 75%;
+}
+
+.bg3::after {
+  background: url("../img/arribaverde.png");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: 80% 75%;
 }

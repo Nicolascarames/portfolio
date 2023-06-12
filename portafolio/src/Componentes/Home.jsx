@@ -1,37 +1,28 @@
-import { Link } from "react-router-dom";
-import "./Home.css";
-import { useState } from "react";
-import menuIcon from "../icons/menu.svg";
-import closeIcon from "../icons/close.svg";
-
 import { Titulo } from "./Titulo";
 import { Skills } from "./Skills";
+import { Header } from "./Header";
+import "./Home.css";
 
 export const Home = () => {
-  const [menu, setMenu] = useState(false);
   return (
-    <main className="body">
-      <section className="main_home">
-        <header className="header">
-          {menu && (
-            <nav className="header_nav">
-              <Link>Proyectos</Link>
-              <Link>About me</Link>
-              <Link>Contacto</Link>
-            </nav>
-          )}
-          <img
-            src={menu ? closeIcon : menuIcon}
-            alt="menu"
-            className="header_menu"
-            onClick={() => setMenu(!menu)}
-          />
-        </header>
-        <article className="titulo_box">
-          <Titulo />
-        </article>
+    <main className="home">
+      <section className="main_segundo parallax bg1 ">
+        <Titulo />
       </section>
-      <section className="main_skills">
+
+      <section className="main_home no_parallax">
+        <Header />
+      </section>
+
+      <section className="main_segundo parallax bg2 ">
+        <h1>fondo fijo 1</h1>
+      </section>
+
+      <section className="main_segundo parallax bg3">
+        <h1>fondo fijo 2</h1>
+      </section>
+
+      <section className="main_tercero no_parallax">
         <Skills />
       </section>
     </main>

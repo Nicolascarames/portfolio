@@ -1,4 +1,3 @@
-import "./Skills.css";
 import react from "../icons/react.svg";
 import git from "../icons/git.svg";
 import java from "../icons/javascript.svg";
@@ -7,9 +6,9 @@ import node from "../icons/node.svg";
 export const Skills = () => {
   return (
     <>
-      <section className="skills">
+      <section className="skills skills1">
         <header className="skills_header">
-          <h3>Soft skills</h3>
+          <h3>Skills</h3>
         </header>
         <article className="skills_article">
           <img src={react} alt="react" />
@@ -18,7 +17,16 @@ export const Skills = () => {
           <img src={java} alt="react" />
         </article>
       </section>
-      <section className="skills">
+      <section className="skills skills2">
+        <header className="skills_header">
+          <h3>Proyects</h3>
+        </header>
+        <picture></picture>
+      </section>
+      <section className="skills skills3">
+        <header className="skills_header">
+          <h3>About</h3>
+        </header>
         <picture></picture>
       </section>
     </>
