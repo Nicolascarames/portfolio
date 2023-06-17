@@ -63,10 +63,3 @@
   background-repeat: no-repeat;
   background-position: 80% 75%;
 }
-
-.bg3::after {
-  background: url("../img/arribaverde.png");
-  background-size: 100px;
-  background-repeat: no-repeat;
-  background-position: 80% 75%;
-}

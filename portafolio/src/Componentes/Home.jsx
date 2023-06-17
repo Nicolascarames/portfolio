@@ -14,17 +14,18 @@ export const Home = () => {
         <Header />
       </section>
 
+      <section className="main_tercero parallax bg2">
+        <Skills />
+      </section>
+
+      {/* 
       <section className="main_segundo parallax bg2 ">
         <h1>fondo fijo 1</h1>
       </section>
 
       <section className="main_segundo parallax bg3">
         <h1>fondo fijo 2</h1>
-      </section>
-
-      <section className="main_tercero no_parallax">
-        <Skills />
-      </section>
+      </section> */}
     </main>
   );
 };
