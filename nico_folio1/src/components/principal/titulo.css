@@ -1,0 +1,55 @@
+.titulo {
+  background-color: var(--purple2);
+  color: var(--purple);
+}
+
+.titulo * {
+  font-family: neon2;
+  letter-spacing: 2px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.titulo {
+  height: 100vh;
+  padding-top: 50vh;
+  /* padding-bottom: 85vh; */
+}
+
+.titulo .parallax {
+  overflow: hidden;
+  letter-spacing: -2px;
+  line-height: 0.8;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+
+  position: relative;
+  top: 30vh;
+}
+
+.titulo .parallax .scroller {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 100px;
+  display: flex;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.titulo .parallax span {
+  display: block;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .titulo .parallax .scroller {
+    font-size: 60px;
+  }
+  .titulo {
+    padding-top: 85vh;
+  }
+}

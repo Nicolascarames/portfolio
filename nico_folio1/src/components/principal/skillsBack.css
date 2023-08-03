@@ -1,0 +1,19 @@
+.contenedor_skills {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.div_skills {
+  height: 70vh;
+  width: 90vw;
+  justify-self: center;
+}
+
+.boton_skills {
+  /* position: absolute; */
+  top: 500px;
+  left: 100px;
+}
