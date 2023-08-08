@@ -6,7 +6,10 @@ import "./Home.css";
 export const Home = () => {
   return (
     <main className="home">
-      <section className="main_segundo parallax bg1 ">
+      <Titulo />
+      <Header />
+      <Skills />
+      {/* <section className="main_segundo parallax bg1 ">
         <Titulo />
       </section>
 
@@ -16,7 +19,7 @@ export const Home = () => {
 
       <section className="main_tercero parallax bg2">
         <Skills />
-      </section>
+      </section> */}
 
       {/* 
       <section className="main_segundo parallax bg2 ">
